@@ -1,0 +1,51 @@
+
+
+/* CSS cho class .sparkle */
+.sparkle {
+  max-width: 10em;
+  color: #441151; /* Thay thế biến màu sắc $c-text */
+  margin: auto auto;
+}
+
+.sparkle:hover {
+  cursor: pointer;
+}
+
+/* CSS cho class .u-hover--sparkle */
+.u-hover--sparkle {
+  box-sizing: border-box;
+  position: relative;
+  padding: 0.75em;
+}
+
+.u-hover--sparkle::before,
+.u-hover--sparkle::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform-origin: center;
+}
+
+.u-hover--sparkle::before {
+  border-top: 0.2em solid #9F2042; /* Thay thế biến màu sắc $c-border */
+  border-bottom: 0.2em solid #9F2042; /* Thay thế biến màu sắc $c-border */
+  transform: scale3d(0, 1, 1);
+  border-radius: 8px;
+}
+
+.u-hover--sparkle::after {
+  border-left: 0.2em solid #9F2042; /* Thay thế biến màu sắc $c-border */
+  border-right: 0.2em solid #9F2042; /* Thay thế biến màu sắc $c-border */
+  transform: scale3d(1, 0, 1);
+  border-radius: 8px;
+}
+
+.u-hover--sparkle:hover::before,
+.u-hover--sparkle:hover::after {
+  transform: scale3d(1, 1, 1);
+  transition: transform 900ms;
+}

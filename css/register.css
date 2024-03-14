@@ -1,0 +1,23 @@
+.create{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+p{
+  margin: 0;
+  padding-bottom: unset;
+}
+.register_but{
+  color: #ffffff;
+  font-size: 20px;
+  background: #111111;
+  border-radius: 80px;
+  opacity: 25%;
+  cursor: pointer;
+}
+.register_but:hover{
+  background: #111111;
+  opacity: unset;}
+  .error-message {
+    color: red;
+  }

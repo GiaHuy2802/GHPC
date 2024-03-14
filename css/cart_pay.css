@@ -1,0 +1,140 @@
+.address_cus {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.address_cus .row_address {
+  display: flex;
+  flex-direction: column;
+}
+.address_cus .row_address p {
+  padding: 8px 0 24px 0;
+}
+.address_cus .row_address form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.row_address form input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+}
+.row_address form label {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+}
+.row_address form textarea {
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+.row_address form select {
+  padding: 12px 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  display: flex;
+  width: 100%;
+}
+mark {
+  background: unset;
+  color: red;
+}
+.row_payment {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.row_payment .payment {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+}
+.payment .col_pay {
+  display: flex;
+  flex-wrap: wrap;
+  background: #F4F4F4;
+
+  padding: 24px;
+  border-radius: 8px;
+}
+.payment label{
+    color: #141414;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.payment label input[type="radio"]{
+    width: 16px;
+    height: 24px;
+    accent-color: #007745 ;
+}
+.payment .col_pay .col {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.payment .col_pay .col h3 {
+  padding-bottom: 4px;
+  font-size: 16px ;
+  line-height: 24px;
+  color: #141414;
+
+}
+.cart_right span p mark{
+    color: #007745;
+    font-weight: 500;
+}
+.cart_right .wrp_cart_right{
+    background: #ffffff;
+}
+.cart_right .wrp_cart_right .name_row img{
+    border: 1px solid #DCDCDC
+}
+.col_pay .col span {
+  display: flex;
+  gap: 8px;
+}
+.payment span{
+    width: 100%;
+    display: flex;
+    gap: 8px;
+}
+.cart_right{
+    width: 28%;
+    
+}
+@media(max-width:1024px){
+    .cart .wrp{
+        justify-content: center;
+    }
+    .address_cus {
+        width: 100%;
+    }
+    .cart_right{
+        width: 50%
+    }
+    .cart_right .wrp_cart_right .name_row{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media(max-width:430px){
+    .payment .col_pay{
+        gap: 16px;
+    }
+    .payment .col_pay .col{
+        width: 100%;
+    }
+    .cart_right{
+        width: 100%;
+    }
+}

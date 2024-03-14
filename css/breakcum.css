@@ -1,0 +1,31 @@
+.breadcrumbs {
+    --color-text: #5d5d5d;
+    list-style: none;
+    border-radius: 10px;
+    padding: 7px 40px;
+    margin-bottom: 34px;
+  }
+  .breadcrumbs li {
+    display: inline;
+  }
+  .breadcrumbs li + li::before {
+    content: "/\00a0";
+    padding: 6px;
+    color: var(--color-text);
+  }
+  .breadcrumbs li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-text);
+    text-transform: capitalize;
+  }
+  .breadcrumbs li a:hover {
+    text-decoration: underline;
+  }
+  @media(max-width:1024px){
+    .breadcrumbs{
+      padding: 7px 17px;
+    }
+  }

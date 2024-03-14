@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/itemlist.css" />
+    <link rel="stylesheet" href="css/breakcum.css" />
+    <link rel="stylesheet" href="css/hover.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/cart_pay.css" />
+  </head>
+  <body>
+    <div class="top">
+      <header>
+        <div class="wrp">
+          <a href="" class="menu_tags">
+            <img src="css//icon/menu.svg" alt="" />
+          </a>
+          <a href="" class="logo">
+            <img src="css/icon/Gia Huy PC 2.svg" alt="" />
+          </a>
+          <form action="">
+            <input type="search" />
+            <button type="submit">Search</button>
+          </form>
+          <a href="" class="cart">
+            <img src="css/icon/Cart.svg" alt="" />
+          </a>
+          <a href="" class="menu_tags">
+            <img src="css//icon/shopping_cart.svg" alt="" />
+          </a>
+          <a href="" class="menu_tags">
+            <img src="css//icon/person.svg" alt="" />
+          </a>
+        </div>
+      </header>
+      <section class="menu">
+        <div class="wrp">
+          <div class="tags">
+            <a href="" class="menu_logo">
+              <img src="css/icon/menu.svg" alt="" />
+            </a>
+            <a href="" class="sparkle u-hover--sparkle"> Danh mục sản phẩm</a>
+            <a href="" class="sparkle u-hover--sparkle"> Sản phẩm bán chạy</a>
+            <a href="" class="sparkle u-hover--sparkle">Tin tức</a>
+            <a href="" class="sparkle u-hover--sparkle">Liên hệ</a>
+          </div>
+          <div class="media">
+            <a href="" class="logo_media">
+              <img src="css/icon/Facebook.svg" alt="" />
+            </a>
+            <a href="" class="logo_media">
+              <img src="css/icon/instagram 1.svg" alt="" />
+            </a>
+            <a href="" class="logo_media">
+              <img src="css/icon/Youtube.svg" alt="" />
+            </a>
+            <a href="" class="logo_media">
+              <img src="css/icon/tiktok.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <ul class="breadcrumbs" style="padding-top: 180px">
+      <li><a href="./Home.html">Trang chủ</a></li>
+      <li><a href="./cart.html">Giỏ hàng</a></li>
+    </ul>
+    <section class="cart">
+      <div class="wrp">
+        <h1>Thanh toán</h1>
+        <div class="address_cus">
+          <div class="row_address">
+            <h1>Thông tin đặt hàng</h1>
+            <p><mark>*</mark> Vui lòng điền đầy đủ thông tin của bạn</p>
+            <form action="" class="address"  id="checkoutForm">
+              <input type="text" placeholder="họ tên" id="name" name="name" required/>
+              <label for="">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  id="email"
+                  name="email"
+                  required
+                />
+                <input
+                  type="number"
+                  id="phone"
+                  name="phone"
+                  min="0"
+                  placeholder="Nhập số điện thoại"
+                  required
+                />
+              </label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Địa chỉ cụ thể: số nhà, tên đường, xã phường hoặc thị trấn"
+              />
+
+              <label for="" class="address">
+                <select
+                  class="form-select form-select-sm mb-3"
+                  id="city"
+                  aria-label=".form-select-sm"
+                 required>
+                  <option value="" selected>Chọn tỉnh thành</option>
+                </select>
+                <select
+                  class="form-select form-select-sm mb-3"
+                  id="district"
+                  aria-label=".form-select-sm"
+                required>
+                  <option value="" selected>Chọn quận huyện</option>
+                </select>
+
+                <select
+                  style="display: none"
+                  class="form-select form-select-sm"
+                  id="ward"
+                  aria-label=".form-select-sm"
+                >
+                  <option value="" selected>Chọn phường xã</option>
+                </select>
+              </label>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="5"
+                placeholder="Ghi chú..."
+              ></textarea>
+            </form>
+          </div>
+          <div class="row_payment">
+            <h1>Phương thức thanh toán</h1>
+            <p><mark>*</mark> Vui lòng điền đầy đủ thông tin của bạn</p>
+            <div class="payment">
+              <label for="">
+                <input type="radio" name="payment_method" id="" /> Chuyển khoản ngân
+                hàng</label
+              >
+
+              <div class="col_pay">
+                <div class="col">
+                  <h3>Techcombank</h3>
+                  <span
+                    >Chủ tài khoản:
+                    <p>Trần Thế Khánh</p>
+                  </span>
+                  <span
+                    >Số tài khoản:
+                    <p>19032499668686</p>
+                  </span>
+                  <span
+                    >Chi nhánh:
+                    <p>Đống Đa</p>
+                  </span>
+                </div>
+                <div class="col">
+                  <h3>Techcombank</h3>
+                  <span
+                    >Chủ tài khoản:
+                    <p>Trần Thế Khánh</p>
+                  </span>
+                  <span
+                    >Số tài khoản:
+                    <p>19032499668686</p>
+                  </span>
+                  <span
+                    >Chi nhánh:
+                    <p>Đống Đa</p>
+                  </span>
+                </div>
+                <div class="col">
+                  <h3>Techcombank</h3>
+                  <span
+                    >Chủ tài khoản:
+                    <p>Trần Thế Khánh</p>
+                  </span>
+                  <span
+                    >Số tài khoản:
+                    <p>19032499668686</p>
+                  </span>
+                  <span
+                    >Chi nhánh:
+                    <p>Đống Đa</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="payment">
+              <label for="">
+                <input type="radio" name="payment_method" id="" />
+                Thanh toán khi nhận hàng - Ship COD
+              </label>
+
+             <div class="col_pay">
+              <span>
+                Trường hợp Ship COD quý khách hàng vui lòng cọc trước 500k để xác thực giao dịch.
+              </span>
+             </div>
+            </div>
+            <div class="payment">
+              <label for="">
+                <input type="radio" name="payment_method" id="" />
+                Thanh toán tại cửa hàng
+              </label>
+
+              <div class="col_pay">
+                <span>
+                  Địa chỉ:
+                  <p>26 Ngõ 165 Thái Hà, Láng Hạ, Đống Đa, Hà Nội</p>
+                </span>
+              </div>
+            </div>
+            <div class="payment">
+              <label for="">
+                <input type="radio" name="payment_method" id="" />
+                Thanh toán online qua cổng Alepay
+              </label>
+              <div class="col_pay">
+                
+              <span>
+                Thực hiện giao dịch thanh toán trực tuyến một cách đơn giản, nhanh chóng và an toàn với Alepay
+              </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart_right">
+          <div class="wrp_cart_right">
+            <h3>Thông tin đơn hàng</h3>
+            <div class="name_row">
+              <img src="images/thinkpad/ThinkPadX1.svg" alt="" />
+              <div class="name_tag">
+                <h3 class="name">ThinkPad X1 Carbon Gen 10</h3>
+                <span class="price_row">
+                  <strong class="price">37.500.000 ₫</strong>
+                </span>
+              </div>
+            </div>
+            <div class="name_row">
+              <img src="images/thinkpad/ThinkPadX1.svg" alt="" />
+              <div class="name_tag">
+                <h3 class="name">ThinkPad X1 Carbon Gen 10</h3>
+                <span class="price_row">
+                  <strong class="price">37.500.000 ₫</strong>
+                </span>
+              </div>
+            </div>
+            <div class="name_row">
+              <img src="images/thinkpad/ThinkPadX1.svg" alt="" />
+              <div class="name_tag">
+                <h3 class="name">ThinkPad X1 Carbon Gen 10</h3>
+                <span class="price_row">
+                  <strong class="price">37.500.000 ₫</strong>
+                </span>
+              </div>
+            </div>
+            <span>
+              Tổng thanh toán:
+              <p class="price_total"></p>
+            </span>
+            <span>
+              <strong>
+                Phí vận chuyển
+              </strong>
+              <p class="price_total">
+                <mark>Miễn phí vận chuyển</mark>
+              </p>
+            </span>
+            <p>
+              * Tặng balo (3), chuột không dây (3), và lót chuột bo viền (3)
+            </p>
+            <button type="submit" id="submitBtn">
+              <a href="./cart_pay.html"> Thanh toán </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrp">
+        <div class="col_list">
+          <div class="col head">
+            <img src="css/icon/Gia Huy PC 2.svg" alt="" />
+            <strong> Nâng tầm cuộc sống của bạn ! </strong>
+            <div class="media">
+              <a href="" class="logo_media">
+                <img src="css/icon/Facebook.svg" alt="" />
+              </a>
+              <a href="" class="logo_media">
+                <img src="css/icon/instagram 1.svg" alt="" />
+              </a>
+              <a href="" class="logo_media">
+                <img src="css/icon/Youtube.svg" alt="" />
+              </a>
+              <a href="" class="logo_media">
+                <img src="css/icon/tiktok.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <h3>About</h3>
+            <a href=""> Về chúng tôi </a>
+            <a href=""> Địa chỉ </a>
+            <a href=""> Sản phẩm </a>
+            <a href=""> Tin tức </a>
+          </div>
+          <div class="col">
+            <h3>About</h3>
+            <a href=""> Về chúng tôi </a>
+            <a href=""> Địa chỉ </a>
+            <a href=""> Sản phẩm </a>
+            <a href=""> Tin tức </a>
+          </div>
+          <div class="col">
+            <h3>About</h3>
+            <a href=""> Về chúng tôi </a>
+            <a href=""> Địa chỉ </a>
+            <a href=""> Sản phẩm </a>
+            <a href=""> Tin tức </a>
+          </div>
+          <div class="col">
+            <h3>About</h3>
+            <a href=""> Về chúng tôi </a>
+            <a href=""> Địa chỉ </a>
+            <a href=""> Sản phẩm </a>
+            <a href=""> Tin tức </a>
+          </div>
+        </div>
+      </div>
+      <div class="copy_right">
+        <span> © 2023 Ecommerce. </span>
+        <span> Privacy Policy </span>
+      </div>
+    </footer>
+  </body>
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/slide.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <script src="js/dicstrict.js"></script>
+  <script>
+    document.getElementById('checkoutForm').addEventListener('submit', function (event) {
+      // Ngăn chặn form tự động submit
+      event.preventDefault();
+  
+      // Thực hiện kiểm tra tất cả các input có thuộc tính required
+      if (validateForm()) {
+        // Nếu tất cả input đều hợp lệ, có thể submit form
+        this.submit();
+      } else {
+        // Nếu có lỗi, hiển thị thông báo hoặc xử lý theo ý muốn của bạn
+        alert('Vui lòng điền đầy đủ thông tin và chọn phương thức thanh toán.');
+      }
+    });
+  
+    // Sự kiện click trên nút "submit"
+    document.getElementById('submitBtn').addEventListener('click', function () {
+      // Gọi hàm kiểm tra form khi click vào nút
+      validateForm();
+    });
+  
+    // Hàm kiểm tra form
+    function validateForm() {
+      // Thực hiện kiểm tra tất cả các input có thuộc tính required
+      var form = document.getElementById('checkoutForm');
+      if (form.checkValidity()) {
+        // Nếu tất cả input đều hợp lệ, trả về true
+        return true;
+      } else {
+        // Nếu có lỗi, hiển thị thông báo hoặc xử lý theo ý muốn của bạn
+        alert('Vui lòng điền đầy đủ thông tin và chọn phương thức thanh toán.');
+        return false;
+      }
+    }
+  </script>
+  
+</html>

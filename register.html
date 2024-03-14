@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADMIN</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/register.css" />
+  </head>
+  <body>
+    <section class="login">
+      <div class="wrp">
+        <h1>Create an account</h1>
+        <div class="register">
+          Already have an account?
+          <mark> <a href="./Login.html">Log in</a></mark>
+        </div>
+        <div class="create">
+          <form action="" class="login" id="registrationForm">
+            <label for="">
+              User name
+              <input type="text" name="User" required />
+            </label>
+            <label for="password">Password:
+            <input type="password" id="password" name="password" required minlength="8"/></label>
+            <label for="repassword">Re-enter Password:
+            <input type="password" id="repassword" name="repassword" required /></label>
+            <span id="error-message" class="error-message" ></span>
+            <input type="submit" value="Submit" class="register_but">
+          </form>
+        
+        </div>
+        <div id="success-message" class="success-message"></div>
+        <div class="register">
+          Already have an account?
+          <mark> <a href="Login.html">Log in</a></mark>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="js/passcheck.js"></script>
+</html>

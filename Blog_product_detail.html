@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CMS revos</title>
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/cms_blog.css" />
+   <link rel="stylesheet" href="css/box_icon.css">
+   <link rel="stylesheet" href="css/toggle.css">
+   <link rel="stylesheet" href="css/cms_product.css">
+  </head>
+  <body>
+    <header>
+      <div class="wrp">
+        <a href="./Blog_view.html" class="logo">
+          <img src="css/icon/Group.png" alt="" />
+          <img src="css/icon/RivalCMS.png" alt="" />
+        </a>
+        <div class="avt">
+          <img src="images/Mask Group.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <section class="menu">
+      <aside class="close">
+        <div class="head">
+          <div class="logo"></div>
+          <i class="hamburger-menu">
+            <img src="images/cms/more.png" alt="">
+          </i>
+        </div>
+        <div class="nav">
+          <div class="menu active product_site">
+            <i><img src="css/icon/home.png" alt="" /></i>
+            <span>Danh mục</span>
+            <i class="bx">
+              <img src="images/cms/down-arrow.png" alt="">
+            </i>
+          </div>
+          <div class="menu-dropdown">
+            <div class="sub-menu">
+              <span class="menu">
+                <a href="./Blog_product.html"> Danh sách danh mục</a>
+              </span>
+              <span class="menu">
+                <a href=""> Danh sách sản phẩm</a>
+              </span>
+              <span class="menu">
+                <a href="">Thêm mới danh mục</a>
+              </span>
+              <span class="menu">
+                <a href="">Thêm mới sản phẩm</a>
+              </span>
+              <span class="menu">
+                <a href="">Danh mục đã xóa</a>
+              </span>
+              <span class="menu">
+                <a href="">Sản phẩm đã xóa</a>
+              </span>
+            </div>
+          </div>
+          <div class="menu news">
+            <i>
+              <img src="css/icon/news.png" alt="" />
+            </i>
+            <span>Quản lý tin tức</span>
+          </div>
+          <div class="menu bills">
+            <i>
+              <img src="css/icon/bill.png" alt="" />
+            </i>
+            <span>Hóa đơn</span>
+          </div>
+          <div class="menu deal">
+            <i>
+              <img src="css/icon/deal.png" alt="" />
+            </i>
+            <span>Chương trình khuyến mại</span>
+          </div>
+          <div class="menu user">
+            <i class="bx"><img src="images/cms/user.png" alt=""></i>
+            <span>Quản lý tài khoản</span>
+            <i class="bx">
+              <img src="images/cms/down-arrow.png" alt="">
+            </i>
+          </div>
+          <div class="menu-dropdown">
+            <div class="sub-menu">
+              <span class="menu">Danh sách user</span>
+              <span class="menu">Thêm user</span>
+              <span class="menu">user đã xóa</span>
+            </div>
+          </div>
+          <div class="menu" style="pointer-events: none"></div>
+        </div>
+        <div class="foot">
+          <a href="./Login.html"  id="logout-link">
+            <div class="menu menu-logout">
+              <i class="bx">
+                <img src="images/cms/sign-out.png" alt="">
+              </i>
+              <span> Logout </span>
+            </div>
+          </a>
+        </div>
+      </aside>
+      <div class="col_right">
+       <div class="product_category">
+            <div class="head">
+              <a href="">
+                <img src="images/cms/plus.png" alt="">
+                <p class="add">Thêm mới sản phẩm</p>
+              </a>
+              <a href="">
+                <img src="images/cms/trash.png" alt="">
+                <p class="del">xóa các mục đã chọn</p>
+              </a>
+            </div>
+            <div class="filter">
+             
+                <select name="" id="" >
+                  <option value="0"> Lọc theo danh mục</option>
+                  <option value="1">Laptop LG</option>
+                  <option value="2">Laptop Dell</option>
+                </select>
+                <select name="" id="" >
+                  <option value="0">Hiển thị :10 items</option>
+                  <option value="1">Hiển thị :20 items</option>
+                  <option value="2">Hiển thị :100 items</option>
+                </select>
+            </div>
+            <div class="product list">
+              <div class="title">
+                <input type="checkbox" class="select">
+                <span class="title">
+                  Tiêu đề
+                </span>
+              </div>
+              <div class="product_num">
+                <span class="num_total">
+                sản phẩm
+                </span>
+              </div>
+              <div class="status">
+               <strong>Trạng thái</strong>
+              </div>
+              <div class="setting">
+                <strong>
+                  Công cụ
+                </strong>
+              </div>
+            </div>
+            <div class="product" data-product-id="1">
+              <div class="title">
+                <input type="checkbox" class="select">
+                <p class="title">
+                Laptop LG
+                </p>
+              </div>
+              <div class="product_num">
+                <p class="num_total">
+                 12
+                </p>
+              </div>
+              <div class="status">
+                <input type="checkbox" id="switch" class="toggle"/><label for="switch" id="switchLabel">Toggle</label>
+              </div>
+              <div class="setting">
+                <a href="./404error.html" class="go_page">
+                  <img src="images/cms/magnifying-glass.png" alt="">
+                </a>
+                <a href="">
+                  <img src="images/cms/transaction.png" alt="">
+                </a>
+                <a href="" class="cus_product">
+                  <img src="images/cms/pencil.png" alt="">
+                </a>
+                <a href="" class="delete">
+                  <img src="images/cms/delete.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="product" data-product-id="2">
+              <div class="title">
+                <input type="checkbox" class="select">
+                <p class="title">
+                Laptop ASUS
+                </p>
+              </div>
+              <div class="product_num">
+                <p class="num_total">
+                 12
+                </p>
+              </div>
+              <div class="status">
+                <input type="checkbox" id="switch1" class="toggle"/><label for="switch1"  id="switchLabel">Toggle</label>
+              </div>
+              <div class="setting">
+                <a href="./404error.html" class="go_page">
+                  <img src="images/cms/magnifying-glass.png" alt="">
+                </a>
+                <a href="">
+                  <img src="images/cms/transaction.png" alt="">
+                </a>
+                <a href="" class="cus_product">
+                  <img src="images/cms/pencil.png" alt="">
+                </a>
+                <a href="" class="delete">
+                  <img src="images/cms/delete.png" alt="">
+                </a>
+              </div>
+            </div>
+       </div>
+      </div>
+    </section>
+  </body>
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/custom.js"></script>
+</html>
