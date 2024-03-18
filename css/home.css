@@ -100,10 +100,11 @@ a.banner_side img {
 .supply .wrp {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 10px;
 }
 .supply .wrp h1 {
   width: 100%;
+  margin-bottom: 14px;
 }
 .supply {
   margin-bottom: 46px;
@@ -417,6 +418,7 @@ form.find button {
   padding: 11px 6px;
   border: unset;
   width: 274px;
+  border-radius: 8px;
 }
 .subscribe button {
   padding: 10px 16px;
