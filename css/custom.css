@@ -6,14 +6,26 @@ header .wrp {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 1440px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background: #ffffff;
 }
 header a.menu_tags {
   display: none;
 }
-header .wrp a.cart{
+header .wrp a.cart {
   margin-bottom: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  color: #606060;
+  font-weight: 400;
+  font-size: 12px;
+}
+header .wrp a.cart img {
+  width: 20px;
+  height: 20px;
 }
 header form {
   width: 46%;
@@ -21,7 +33,10 @@ header form {
   flex-direction: row;
   height: 40px;
   border-radius: 8px;
-  border: 1px solid #b6bcc6;
+  border: 1px solid #0d6efd;
+}
+header form img {
+  display: none;
 }
 header form input {
   width: 80%;
@@ -30,14 +45,23 @@ header form input {
   padding-left: 10px;
   padding-right: 5px;
 }
+header form select {
+  border: unset;
+  border-left: 1px solid #0d6efd;
+  padding: 10px;
+}
+.icon_head {
+  display: flex;
+  gap: 23px;
+}
 header form button {
   width: 20%;
   border-radius: 0 8px 8px 0;
   border: unset;
-  background: #9c9595;
+  background: #0d6efd;
   color: #ffffff;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 500;
 }
 .menu {
   border-bottom: 1px solid #aaa6a6;
@@ -62,6 +86,7 @@ header form button {
 .menu .tags a {
   font-weight: 500;
   padding: 5px;
+  font-size: 16px;
 }
 .menu .tags a.menu_logo {
   display: flex;
@@ -75,13 +100,14 @@ footer {
   background: #ffffff;
 }
 
-
 footer .wrp {
   max-width: 1440px;
   display: flex;
   flex-direction: column;
 }
 footer .col_list {
+  width: 1180px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 64px;
@@ -92,15 +118,17 @@ footer .col_list {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: calc((100% - 532px) / 4);
+  width: calc((100% - 596px) / 5);
 }
-.col_list .col a:hover{
+.col_list .col a:hover {
   text-decoration: underline;
-
 }
 .col_list .col.head {
   width: 276px;
-  align-items: center;
+  gap: 15px;
+}
+.col_list .col.head p {
+  color: #505050;
 }
 .col_list .col.head img {
   width: 150px;
@@ -117,22 +145,34 @@ footer .media {
 footer .logo_media img {
   width: unset !important;
 }
+.copy_right {
+  width: 1920px;
+  display: flex;
+}
 footer .copy_right {
+  width: 1920px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 23px;
   background: #eff2f4;
+  margin: 0 auto;
+}
+.wrp_copy {
+  display: flex;
+  width: 1180px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 .top {
   position: fixed;
-  width: 1920px;
+ width: 100%;
   z-index: 10;
   left: 50%;
   top: 0;
   transform: translateX(-50%);
 }
-.mobile_nav{
+.mobile_nav {
   display: none;
 }
 .overlay.active {
@@ -148,11 +188,20 @@ footer .copy_right {
   z-index: 11; /* Đảm bảo nó được hiển thị trên phần còn lại của trang */
   display: none;
 }
-.menu .tags a.menu_logo{
+.back_head {
   display: none;
 }
 @media (max-width: 1199px) {
   .top {
+    width: 100%;
+  }
+  .menu .tags a.menu_logo {
+    display: none;
+  }
+  footer .copy_right {
+    width: 100%;
+  }
+  .wrp_copy {
     width: 100%;
   }
   .wrp {
@@ -162,63 +211,67 @@ footer .copy_right {
     width: 100%;
     padding: 16px;
   }
+  footer .col_list {
+    width: 100%;
+  }
   .col_list .col.head {
     width: 100%;
     align-items: unset;
   }
   .col_list .col {
-    width: calc((100% - 192px) / 4);
+    width: calc((100% - 128px) / 3);
   }
 }
-@media(max-width:1024px){
-  .mobile_nav{
+@media (max-width: 1024px) {
+  .mobile_nav {
     height: 100%;
   }
-  .mobile_nav.active{
+  .icon_head {
+    gap: 8px;
+  }
+  .mobile_nav.active {
     display: block;
-}
-  .mobile_nav .wrp_nav{
+  }
+  .mobile_nav .wrp_nav {
     width: 80%;
     display: flex;
     flex-direction: column;
-    background: #FFFFFF;
+    background: #ffffff;
     overflow-y: auto;
     z-index: 12;
     position: fixed;
     top: 0;
     height: 100%;
   }
-  .wrp_nav .head_nav{
+  .wrp_nav .head_nav {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background: #EFF2F4;
+    background: #eff2f4;
     padding: 20px;
-
   }
-  .wrp_nav .col_nav{
+  .wrp_nav .col_nav {
     display: flex;
     flex-direction: column;
     padding: 0 10px;
-    border-bottom: 1px solid #DEE2E7;
+    border-bottom: 1px solid #dee2e7;
     padding-bottom: 10px;
-
   }
-  .sign_user{
+  .sign_user {
     display: flex;
     flex-direction: row;
     gap: 8px;
   }
-  .wrp_nav .col_nav:last-child{
+  .wrp_nav .col_nav:last-child {
     border: unset;
   }
-  hr{
+  hr {
     background: rgb(0, 0, 0);
     border: unset;
     margin: 0;
     width: 1px;
   }
-  .col_nav a{
+  .col_nav a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -226,7 +279,7 @@ footer .copy_right {
     padding: 12px 13px;
     font-size: 16px;
   }
-  .head_nav img{
+  .head_nav img {
     width: 44px;
   }
 }
@@ -234,22 +287,66 @@ footer .copy_right {
   header a.menu_tags {
     display: flex;
   }
-  .subscribe span{
+  .back_head {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    gap: 16px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #E0E0E0;
+  }
+  .back_head strong {
+    font-size: 18px;
+  }
+  .search-container {
+    position: relative;
+  }
+  header form img {
+    display: flex;
+    background: unset;
+    width: 16px;
+
+  }
+  header form input{
+    padding-left: 0;
+  }
+  .search-container input[type="search"] {
+    padding-right: 30px; /* Đảm bảo khoảng trống để vẽ biểu tượng */
+  }
+
+  .search-container i {
+    position: absolute;
+    right: 10px; /* Điều chỉnh vị trí của biểu tượng */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  header form select {
+    display: none;
+  }
+  .subscribe span {
     text-align: center;
   }
   header a.cart {
     display: none;
   }
+ 
+ 
+  .menu_logo{
+    display: none;
+  }
+
   header .wrp {
     justify-content: unset;
     flex-wrap: wrap;
     gap: 12px;
-    padding-bottom: 16px;
+  
   }
   header form {
     width: 100%;
     order: 4;
     border: 1px solid #dee2e7;
+    padding: 10px;
   }
   header a.logo {
     width: 70%;

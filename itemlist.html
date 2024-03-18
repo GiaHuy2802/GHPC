@@ -22,23 +22,42 @@
     <div class="top">
       <header>
         <div class="wrp">
-          <a href="" class="menu_tags">
+          <a href="#" class="menu_logo">
             <img src="css//icon/menu.svg" alt="" />
           </a>
           <a href="" class="logo">
-            <img src="css/icon/Gia Huy PC 2.svg" alt="" />
+            <img src="images/service/logo-colored.svg" alt="" />
           </a>
           <form action="">
-            <input type="search" />
+            <img src="css/icon/Search-other.svg" alt="">
+            <input type="search" placeholder="Search" required/>
+            <select name="" id="">
+              <option value="0">
+                All category
+              </option>
+            </select>
             <button type="submit">Search</button>
           </form>
-          <a href="" class="cart">
-            <img src="css/icon/Cart.svg" alt="" />
+         <div class="icon_head">
+          <a href="#" class="cart">
+            <img src="css/icon/profile_icon.svg" alt="" />
+           Profile
+          </a> <a href="#" class="cart">
+            <img src="css/icon/mess.svg" alt="" />
+            Message
+          </a> <a href="./cart.html" class="cart">
+            <img src="css/icon/heart.svg" alt="" />
+            Orders
           </a>
-          <a href="" class="menu_tags">
+          <a href="./cart.html" class="cart">
+            <img src="css/icon/Cart.svg" alt="" />
+            Giỏ hàng
+          </a>
+         </div>
+          <a href="./cart.html" class="menu_tags">
             <img src="css//icon/shopping_cart.svg" alt="" />
           </a>
-          <a href="" class="menu_tags">
+          <a href="./Login.html" class="menu_tags">
             <img src="css//icon/person.svg" alt="" />
           </a>
         </div>
@@ -49,10 +68,10 @@
             <a href="" class="menu_logo">
               <img src="css/icon/menu.svg" alt="" />
             </a>
-            <a href="" class="sparkle u-hover--sparkle"> Danh mục sản phẩm</a>
-            <a href="" class="sparkle u-hover--sparkle"> Sản phẩm bán chạy</a>
-            <a href="" class="sparkle u-hover--sparkle">Tin tức</a>
-            <a href="" class="sparkle u-hover--sparkle">Liên hệ</a>
+            <a href="" class=""> Danh mục sản phẩm</a>
+            <a href="" class=""> Sản phẩm bán chạy</a>
+            <a href="" class="">Tin tức</a>
+            <a href="" class="">Liên hệ</a>
           </div>
           <div class="media">
             <a href="" class="logo_media">
@@ -70,6 +89,20 @@
           </div>
         </div>
       </section>
+        <div class="back_head">
+        <a href="" class="back_arrow">
+          <img src="css/icon/arrow_dback.svg" alt="" />
+        </a>
+        <strong>Shopping cart </strong>
+        <div class="hidden_icon">
+          <a href="./cart.html" class="menu_tags">
+            <img src="css//icon/shopping_cart.svg" alt="" />
+          </a>
+          <a href="./Login.html" class="menu_tags">
+            <img src="css//icon/person.svg" alt="" />
+          </a>
+        </div>
+      </div>    
     </div>
     <ul class="breadcrumbs">
       <li><a href="./Home.html">Trang chủ</a></li>
@@ -197,6 +230,30 @@
               </label>
             </div>
           </div>
+          <div class="col_filter">
+            <a href="#" class="fil_name">
+              <strong>Ratings</strong>
+              <img src="css/icon/home nav/expand_more.svg" alt="" />
+            </a>
+            <div class="sub_menu active">
+              <label for="">
+                <input type="checkbox" name="condition" id="" >
+                <img src="css/icon/rating5.svg" alt="">
+              </label>
+              <label for="">
+                <input type="checkbox" name="condition" id="" >
+                <img src="css/icon/rating4.svg" alt="">
+              </label>
+              <label for="">
+                <input type="checkbox" name="condition" id="" >
+                <img src="css/icon/rating3.svg" alt="">
+              </label>
+              <label for="">
+                <input type="checkbox" name="condition" id="" >
+                <img src="css/icon/rating1.svg" alt="">
+              </label>
+            </div>
+          </div>
         </div>
         <div class="product_right">
           <div class="head_product">
@@ -254,6 +311,7 @@
               <p>Samsung</p>
               <img src="css/icon/close.svg" alt="" />
             </a>
+            <a href="#" class="clear">Clear all filter</a>
           </div>
           <div class="hot_selling">
             <a href="" class="items">
@@ -360,8 +418,8 @@
       <div class="wrp">
         <div class="col_list">
           <div class="col head">
-            <img src="css/icon/Gia Huy PC 2.svg" alt="" />
-            <strong> Nâng tầm cuộc sống của bạn ! </strong>
+            <img src="images/service/logo-colored.svg" alt="" />
+            <p> Best information about the company gies here but now lorem ipsum is</p>
             <div class="media">
               <a href="" class="logo_media">
                 <img src="css/icon/Facebook.svg" alt="" />
@@ -405,34 +463,29 @@
             <a href=""> Sản phẩm </a>
             <a href=""> Tin tức </a>
           </div>
+          <div class="col">
+            <h3>Get app</h3>
+           <a href="">
+            <img src="css/icon/googleplay.svg" alt="">
+           </a>
+           <a href="">
+            <img src="images/service/appstore.svg" alt="">
+           </a>
+          </div>
         </div>
       </div>
       <div class="copy_right">
-        <span> © 2023 Ecommerce. </span>
+        <div class="wrp_copy">
+          <span> © 2023 Ecommerce. </span>
         <span> Privacy Policy </span>
+        </div>
       </div>
     </footer>
   </body>
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/slick.js"></script>
   <script src="js/slide.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var filNameLinks = document.querySelectorAll(".fil_name");
-
-      // Định nghĩa hàm xử lý sự kiện click
-      function toggleSubMenu(event) {
-        var subMenu = event.target.nextElementSibling;
-
-        // Toggle class "active" để kích hoạt hoặc tắt hiệu ứng
-        subMenu.classList.toggle("active");
-      }
-
-      // Thêm sự kiện click vào tất cả các thẻ <a> có class là fil_name
-      filNameLinks.forEach(function (link) {
-        link.addEventListener("click", toggleSubMenu);
-      });
-    });
+  <script src="js/sub_filter.js">
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.3.0/nouislider.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wNumb/0.12.0/wNumb.min.js"></script>

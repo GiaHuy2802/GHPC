@@ -5,6 +5,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 22px;
+  padding: 20px;
+  border: 1px solid #DEE2E7;
+  border-radius: 8px;
+  background: #ffffff;
+ 
 }
 .product_detail .col_left_product {
   width: 380px;
@@ -77,6 +82,13 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  gap: 8px;
+}
+.col_mid .rating p.rate{
+  color:#FF9017 ;
+}
+.rating span.review, span.sold{
+  display: flex;
   gap: 8px;
 }
 .rating span.sold {
@@ -237,6 +249,7 @@ th.ram {
   gap: 23px;
   border: 1px solid #e0e7e9;
   border-radius: 8px;
+  background: #ffffff;
 }
 .wrp_desc .right_desc {
   width: calc(100% - 900px);
@@ -248,6 +261,11 @@ th.ram {
   gap: 14px;
   border-radius: 8px;
   border: 1px solid #dee2e7;
+  background: #ffffff;
+}
+.hot_product .wrp{
+  padding: 20px;
+  background: #ffffff;
 }
 .right_desc a.items {
   display: flex;
@@ -290,6 +308,9 @@ a#read-more{
 .desc_row.active{
   display: none;
 }
+.hot_product .hot_selling a.items{
+  width: calc((100% - 80px) / 5);
+}
 @media (max-width: 1024px) {
   .wrp_desc {
     width: 100%;
@@ -313,13 +334,12 @@ a#read-more{
   .right_desc .wrp {
     flex-wrap: wrap;
     flex-direction: unset;
+    padding: 10px;
   }
   .right_desc a.items {
     width: calc((100% - 40px) / 3);
   }
-  .right_desc .wrp{
-    padding: 8px;
-  }
+  
   span.stock{
     display: none;
   }
@@ -351,8 +371,21 @@ a#read-more{
   .wrp_desc .left_desc{
     display: none;
   }
+  header form{
+    display: none;
+  }
+  .hot_product .wrp h2{
+    font-size: 18px;
+  }
+  .right_desc .wrp{
+    background: unset;
+    border: unset;
+  }
+  .right_desc .wrp h2{
+    font-size: 18px;
+  }
   .product_detail{
-    padding-top: 180px;
+    padding-top: 100px;
   }
   .product_detail .col_left_product{
     width: 100%;
@@ -384,8 +417,11 @@ a#read-more{
     gap: 8px;
     padding-bottom: 12px;
   }
+  .back_head{
+    justify-content: space-between;
+  }
   .col_mid a.send_inquiry{
-    width: 340px;
+    width: calc(100% - 50px);
    text-align: center;
     padding: 11px 0;
 
