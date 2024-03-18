@@ -10,14 +10,72 @@
     padding: 20px;
     border: 1px solid #DEE2E7;
     border-radius: 8px;
-    border-top: unset;
-    border-top-left-radius: 0%;
-    border-top-right-radius: 0%;
+
     background: #FFFFFF;
 }
 .banner .wrp .menu_list{
-    display: none;
-   
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right_col{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.right_col .login{
+    display: flex;
+    flex-direction: column;
+    padding: 14px 10px;
+    gap: 7px;
+    background: #E3F0FF;
+    border-radius: 8px;
+}
+a.join{
+    background: linear-gradient(180deg, #127FFF 0%, #0067FF 100%);
+    color: #FFFFFF !important;
+    border-radius: 8px;
+}
+a.join, a.login_button{
+    text-align: center;
+    padding: 7px ;
+
+}
+a.login_button{
+    border: 1px solid #DEE2E7;
+    border-radius: 8px;
+    color:#0D6EFD !important;
+;   background: #FFFFFF;
+}
+span.wellcome p{
+    color: #1C1C1C;
+    font-size: 16px;
+}
+a.supplier{
+    padding: 16px;
+    background: #F38332;
+    border-radius: 8px;
+    color: #FFFFFF !important;
+    font-size: 16px;
+}a.send, a.supplier{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+a.send{
+    padding: 16px;
+    background: #55BDC3;
+
+    border-radius: 8px;
+    color: #FFFFFF !important;
+    font-size: 16px;
+}
+.login .user{
+    display: flex;
+   flex-wrap: wrap;
+   gap: 9px;
 }
 .banner .wrp .menu_list h3{
     padding: 10px;
@@ -37,38 +95,6 @@
     z-index: 1000; /* Đảm bảo nó được hiển thị trên overlay */
 }
 
-.menu_list {
-    position: fixed;
-    top: 37%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    display: none;
-    z-index: 1500; /* Đảm bảo nó được hiển thị trên overlay */
-}
-
-.menu_list.active {
-    display: flex !important; /* Hiển thị menu khi có lớp active */
-    flex-wrap: wrap;
-    width: 250px;
-    left: 26%;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Lớp mờ */
-    z-index: 999; /* Đảm bảo nó được hiển thị trên phần còn lại của trang */
-    display: none;
-}
-
-
-
 .banner .wrp .menu_list h3{
     text-align: center;
     background: #E5F1FF;
@@ -78,6 +104,9 @@
     display: flex;
    flex-direction: column;
     gap: 8px;
+}
+.wrp .banner_slide .item{
+    display: flex;
 }
 .banner_slide .slider-for{
 
@@ -129,8 +158,13 @@
     padding: 20px 63px 107px 20px ;
 
 }
+.hot_deal .wrp .deal_over{
+    width: calc(100% - 281px);
+    display: flex;
+    flex-wrap: wrap;
+}
 .hot_deal a.product_deal{
-    width: calc((100% - 282px) / 5);
+    width: 20%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -317,25 +351,7 @@ form.find button{
 .hot_product{
     margin-bottom: var(--block-margin);
 }
-.hot_product .wrp{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-.hot_product .hot_selling{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
 
-}
-.hot_selling .items{
-    border: 1px solid #E0E0E0;
-    padding: 9px 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: calc((100% - 80px) / 5);
-}
 .our_service{
     margin-bottom: 85px;
 }
@@ -404,9 +420,56 @@ form.find button{
     color: #FFFFFF;
     cursor: pointer;
 }
+.hot_product .hot_selling a.items{
+    width: calc((100% - 80px ) / 5 );
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 9px 10px;
+      border: 1px solid #E0E0E0;
+      background: #ffffff;
+      border-radius: 8px;
+  }
+  img.like{
+    position: absolute;
+    right: 0;
+    border: 1px solid #DEE2E7;
+    padding: 8px;
+    border-radius: 8px;
+  }
+  .hot_product .wrp{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  a.items .detail_product{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 0 6px;
+  }
+  .detail_product mark.price{
+    background: unset;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  .detail_product p.name{
+    color: #606060;
+    font-size: 16px;
+    line-height: 24px;
+  }
 @media(max-width:1024px){
-    .product_category{
+    .right_col {
         display: none;
+    }
+    .wrp .banner_slide {
+        width: calc(100% - 260px);
+    }
+    .banner_slide .item img{
+        width: 100%;
     }
     .banner .wrp {
         width: 100%;
@@ -432,7 +495,23 @@ form.find button{
         text-align: center;
      
     }
-
+    .hot_deal .wrp .deal_over{
+        width: 100%;
+    }
+    .product_category .wrp .product_list{
+        flex-direction: column;
+        gap: 15px;
+        border: unset;
+    }
+    .wrp .product_list .product{
+        width: 100%;
+    }
+    img.home_banner{
+        display: none;
+    }
+    .product_list h1{
+        display: flex !important;
+    }
     .wrp .product_list .product a{
         width: 33%;
     }
@@ -452,11 +531,51 @@ form.find button{
         padding-bottom: 16px;
     }
 }
-@media(max-width:430px){
+@media(max-width:431px){
+    .find .wrp{
+        display: none;
+    }
+    .hot_product .hot_selling a.items{
+        width: calc((100% - 20px) / 2);
+    }
+      .hot_deal .countdown{
+        padding: 12px;
+      }
+      .banner{
+        padding-top: 137px;
+      }
     .banner .wrp{
         padding: unset;
         flex-direction: column;
       }
+      .wrp .product_list .product{
+        flex-wrap: initial;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+      .hot_deal .wrp .deal_over{
+      
+    flex-wrap: initial;
+    overflow-x: auto;
+      }
+      .hot_deal a.product_deal{
+       flex: 0 0 50vw ; 
+      }
+      .wrp .product_list .product a{
+       flex: 0 0 40vw;
+    
+        flex-direction: column-reverse;
+        gap: 4px;
+      }
+      .product_list .product a span{
+        padding: 12px;
+      }
+      .product_list .product a img{
+        position: unset;
+        width: 100%;
+        height: auto;
+      }
+    
       .banner .wrp .menu_list{
         flex-wrap: initial;
         overflow-x: auto;
@@ -465,27 +584,27 @@ form.find button{
         white-space: nowrap;
         flex-direction: unset;
         padding: 0 16px;
+        padding-top: 16px;
       }
       .banner .wrp .menu_list h3{
         display: none;
       }
       .banner .wrp .menu_list a{
-        color: #0D6EFD;
+        color: #0D6EFD !important;
         font-weight: 400;
         background: #EFF2F4;
         padding: 8px 9px;
         border-radius: 8px;
       }
+      .banner .wrp .menu_list a:hover{
+
+      }
       .wrp .banner_slide{
         width: 100%;
         height: 100%;
       }
-      .find .wrp{
-        display: none;
-      }
-      .hot_selling .items{
-        width: calc((100% - 20px) / 2);
-      }
+  
+     
       .service a{
         width: 100%;
       }

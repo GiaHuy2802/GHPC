@@ -11,8 +11,8 @@
         0: {
           nav: false,
         },
-        600: {
-          nav: false,
+        400: {
+        autoplay:true,
         },
         1000: {
           nav: true,
@@ -32,10 +32,13 @@
       loop:true,
       responsive: {
         0: {
-          items: 4,
+          items: 1,
         },
         600: {
           items: 4,
+        },
+        900: {
+          items: 3,
         },
         1000: {
           items: 4,

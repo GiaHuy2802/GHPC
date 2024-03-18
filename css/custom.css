@@ -74,6 +74,8 @@ header form button {
 footer {
   background: #ffffff;
 }
+
+
 footer .wrp {
   max-width: 1440px;
   display: flex;
@@ -130,9 +132,25 @@ footer .copy_right {
   top: 0;
   transform: translateX(-50%);
 }
-
-
-
+.mobile_nav{
+  display: none;
+}
+.overlay.active {
+  display: block; /* Hiển thị overlay khi có lớp active */
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Lớp mờ */
+  z-index: 11; /* Đảm bảo nó được hiển thị trên phần còn lại của trang */
+  display: none;
+}
+.menu .tags a.menu_logo{
+  display: none;
+}
 @media (max-width: 1199px) {
   .top {
     width: 100%;
@@ -152,9 +170,72 @@ footer .copy_right {
     width: calc((100% - 192px) / 4);
   }
 }
-@media (max-width: 430px) {
+@media(max-width:1024px){
+  .mobile_nav{
+    height: 100%;
+  }
+  .mobile_nav.active{
+    display: block;
+}
+  .mobile_nav .wrp_nav{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    overflow-y: auto;
+    z-index: 12;
+    position: fixed;
+    top: 0;
+    height: 100%;
+  }
+  .wrp_nav .head_nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #EFF2F4;
+    padding: 20px;
+
+  }
+  .wrp_nav .col_nav{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    border-bottom: 1px solid #DEE2E7;
+    padding-bottom: 10px;
+
+  }
+  .sign_user{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+  .wrp_nav .col_nav:last-child{
+    border: unset;
+  }
+  hr{
+    background: rgb(0, 0, 0);
+    border: unset;
+    margin: 0;
+    width: 1px;
+  }
+  .col_nav a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 13px;
+    font-size: 16px;
+  }
+  .head_nav img{
+    width: 44px;
+  }
+}
+@media (max-width: 431px) {
   header a.menu_tags {
     display: flex;
+  }
+  .subscribe span{
+    text-align: center;
   }
   header a.cart {
     display: none;

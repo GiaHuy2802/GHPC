@@ -178,6 +178,11 @@ i img{
 .nav .menu{
     align-items: center;
 }
+.nav .menu:hover{
+  background: #c9a0a0;
+  border-radius: 8px;
+  color: #fff !important;
+}
 .nav .menu.active {
   background: #c9a0a0;
     color: white;
@@ -209,6 +214,7 @@ aside.close .menu-dropdown .sub-menu {
 }
 .menu-dropdown .sub-menu {
     display: none;
+    font-weight: 600;
 }
 .sub-menu .menu {
     font-size: 14px;

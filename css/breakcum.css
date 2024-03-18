@@ -2,8 +2,11 @@
     --color-text: #5d5d5d;
     list-style: none;
     border-radius: 10px;
-    padding: 7px 40px;
+   width: 1180px;
+   margin: 0 auto;
     margin-bottom: 34px;
+    padding-top: 165px;
+    padding-left: 0;
   }
   .breadcrumbs li {
     display: inline;
@@ -24,8 +27,15 @@
   .breadcrumbs li a:hover {
     text-decoration: underline;
   }
-  @media(max-width:1024px){
+  @media(max-width:1190px){
     .breadcrumbs{
-      padding: 7px 17px;
+      width: 100%;
+      padding-left: 16px;
+      margin-bottom: 20px;
     }
   }
+@media(max-width:431px){
+  .breadcrumbs{
+    margin-bottom: unset;
+  }
+}
