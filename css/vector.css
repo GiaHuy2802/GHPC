@@ -40,10 +40,25 @@ del.old_price{
     .hot_product .hot_selling a.items{
        flex-direction: unset;
     }
+    .hot_product{
+        margin-bottom: 20px;
+    }
+    .detail_product p.name{
+        color: #505050;
+    }
+    .hot_product.maylike .detail_product p.name{
+        color: #8B96A5;
+    }
+    .hot_product.hot_product.maylike .hot_selling a.items img{
+        width: 100%;
+    }
+    .hot_product.maylike .hot_selling a.items{
+        flex-direction: column;
+    }
     p.row{display: none;}
     .hot_selling a.items img
     {
-        width: 84px;
+        width: 100px;
     }
     .hot_selling a.items img.like{
         display: none;
@@ -51,6 +66,10 @@ del.old_price{
     .detail_product mark.price{
         font-size: 16px;
         width: 100%;
+        color: #333333 !important;
+    }
+    mark.detail{
+        display: none;
     }
     .mobi_filter a{
         padding: 5px;
