@@ -231,6 +231,7 @@ a.product_deal span {
   flex-wrap: wrap;
   border-radius: 8px;
   border: 1px solid #e0e0e0;
+  cursor: pointer;
 }
 .product_list .more {
   display: none;
@@ -643,6 +644,7 @@ a.items .detail_product {
   }
   .hot_deal .wrp .deal_over {
     flex-wrap: initial;
+    padding: 0;
     overflow-x: auto;
   }
   .hot_deal a.product_deal {

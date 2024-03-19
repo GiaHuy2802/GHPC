@@ -10,7 +10,7 @@
 
     // Khởi tạo thanh trượt
     noUiSlider.create(slider, {
-      start: [0, 1000], // Khoảng giá ban đầu
+      start: [200, 800], // Khoảng giá ban đầu
       connect: true, // Kết nối hai nút trượt
       range: {
         min: 0, // Giá tối thiểu

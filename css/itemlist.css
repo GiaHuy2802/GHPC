@@ -41,6 +41,7 @@
   flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
+  cursor: pointer;
 }
 .noUi-horizontal{
   height: 8px !important;
@@ -233,7 +234,8 @@ a.grid{
   cursor: pointer;
 }
 .detail_product mark.price{
-  font-size: 18px;
+  font-size: 16px;
+  color: #8B96A5 !important;
 }
 del.old_price{
   font-size: 16px;
@@ -332,7 +334,7 @@ cursor: pointer;
     display: none !important;
   }
 .hidden_icon{
-  padding-left: 160px;
+  padding-left: 126px;
   display: flex;
   flex-direction: row;
   gap: 8px;

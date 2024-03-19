@@ -28,11 +28,13 @@ a.cart {
 .cart .wrp {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  padding-top: 100px;
+  gap: 23px;
+  padding-top: 110px;
 }
 .cart .wrp h1 {
   width: 100%;
+  font-weight: 600;
+  font-size: 24px;
 }
 .cart_list {
   width: 880px;
@@ -75,14 +77,18 @@ span.total select {
   border-radius: 8px;
   width: 123px;
   cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  color: #1c1c1c;
 }
 .cart_item .name_row .name_tag {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  width: 400px;
 }
 .cart_item .name_row img {
-  width: 70px;
+  width: 80px;
   border: 1px solid #dcdcdc;
   border-radius: 8px;
   align-items: center;
@@ -107,7 +113,7 @@ span.total select {
   width: 400px;
 }
 .cart_right {
-  width: calc(100% - 900px);
+  width: calc(100% - 903px);
 }
 .wrp_cart_right {
   display: flex;
@@ -135,10 +141,17 @@ span.total select {
   flex-direction: row;
   gap: 10px;
 }
-
+strong.total{
+  font-weight: 500;
+  color: #1C1C1C;
+}
 .secure p {
   display: flex;
   flex-direction: column;
+  color: #A9ACB0;
+}
+.secure strong{
+  color: #1C1C1C;
 }
 .wrp_cart_right form label {
   border-bottom: 8px;
@@ -189,8 +202,23 @@ p.tax {
 .bill span:nth-child(4) {
   padding: 20px 0;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 28px;
+  color: #1c1c1c;
+}
+.payment{
+  display: flex;
+  padding-top: 18px;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 8px;
+}
+.payment a img{
+  width: 50px;
+}
+span p.total{
+  font-size: 20px;
+
 }
 .bill a.checkout {
   padding: 16px;
@@ -200,12 +228,24 @@ p.tax {
   color: #ffffff !important;
   font-weight: 500;
 }
-span.ram,
-span.ssd {
-  width: 100%;
+.series_detail span{
   display: flex;
-  gap: 8px;
   color: #8b96a5;
+}
+.series_detail span:not(:last-child)::after {
+  content: ", ";
+}
+
+
+
+
+span strong {
+ font-weight: 400;
+}
+.series_detail{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
 }
 .button_Cart {
   width: 100%;
@@ -303,6 +343,7 @@ a.later {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  color: #606060;
 }
 .quantity-control {
   display: none;
@@ -312,6 +353,9 @@ a.later {
   .cart_list {
     width: 100%;
     padding: 15px 16px;
+  }
+  .payment{
+    display: none;
   }
   .name_tag h3.name {
     width: 100%;
@@ -356,7 +400,6 @@ a.later {
   }
   .cart_item .name_row .name_tag {
     justify-content: center;
-    width: 175px;
     gap: 5px;
   }
   .name_tag h3.name {
