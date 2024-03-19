@@ -11,7 +11,9 @@ a.items .detail_product{
 }
 .detail_product p.name{
     width: 100%;
-
+    color: #1c1c1c;
+    font-weight: 500;
+    line-height: 22px;
 }
 img.like{
     top: 5%;

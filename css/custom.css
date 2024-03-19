@@ -120,6 +120,14 @@ footer .col_list {
   gap: 8px;
   width: calc((100% - 596px) / 5);
 }
+.col_list .col h3{
+  color: #1C1C1C;
+  font-size: 16px;
+
+}
+.col_list .col a{
+  color: #8B96A5;
+}
 .col_list .col a:hover {
   text-decoration: underline;
 }

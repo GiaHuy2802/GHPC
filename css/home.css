@@ -1,6 +1,6 @@
 .banner {
   margin-bottom: var(--block-margin);
-  padding-top: 180px;
+  padding-top: 170px;
 }
 .banner .wrp {
   width: 1180px;
@@ -104,6 +104,7 @@ a.banner_side img {
 }
 .supply .wrp h1 {
   width: 100%;
+  color: #1c1c1c;
   margin-bottom: 14px;
 }
 .supply {
@@ -122,6 +123,7 @@ span.flag strong {
 }
 span.flag p {
   color: #8b96a5;
+  font-size: 13px;
 }
 .slick-slider .slick-track {
   display: flex;
@@ -271,7 +273,9 @@ a.product_deal span {
   padding-top: 16px;
   gap: 8px;
 }
-
+.product_list .product a span strong{
+  font-weight: 400;
+}
 .product a span p {
   margin: 0;
   color: #8b96a5;
@@ -293,8 +297,8 @@ a.product_deal span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 30px 40px;
-  background: url(../images/Group\ 982.svg) no-repeat center center;
+
+
 }
 .find .wrp .row {
   width: 38%;
@@ -370,6 +374,7 @@ form.find button {
 .our_service .wrp h3 {
   font-weight: 600;
   font-size: 24px;
+  color: #1c1c1c;
 }
 .our_service .service {
   display: flex;
@@ -454,6 +459,7 @@ img.like {
 .hot_product .wrp h2 {
   font-size: 24px;
   font-weight: 600;
+  color: #1C1C1C;
 }
 a.items .detail_product {
   display: flex;
@@ -471,7 +477,7 @@ a.items .detail_product {
   color: #1c1c1c !important;
 }
 .detail_product p.name {
-  color: #606060;
+  color: #8B96A5;
   font-size: 16px;
   line-height: 24px;
 }
@@ -568,23 +574,40 @@ a.items .detail_product {
 }
 @media (max-width: 431px) {
   .find .wrp {
-    display: none;
+  display: none;
   }
   .hot_product .wrp{
     padding-top: 0;
   }
   .product_category .wrp .product_list{
     background: #ffffff;
+    gap: 0;
   }
   .countdown .time_over span:nth-child(1) {
     display: none;
   }
+  .hot_product .wrp h2{
+    font-size: 18px;
+    padding: 0 10px;
+ 
+  }
   .countdown .time_over span {
     color: #8b96a5;
     background: #eff2f4;
+    border-radius: 0;
   }
   .product_category .wrp{
     padding: 0;
+    gap: 10px;
+  }
+  .subscribe label input{
+    width: 230px;
+  }
+  .product_category{
+    margin-bottom: 20px;
+  }
+  .hot_deal{
+    margin-bottom: 10px;
   }
   .product_list h1{
     padding: 14px 16px;
@@ -607,6 +630,8 @@ a.items .detail_product {
   }
   .hot_deal .wrp {
     padding: 0;
+    border: unset;
+    border-bottom: 1px solid #DEE2E7;
   }
   .sub_menu_product.active {
     display: flex;
@@ -630,11 +655,13 @@ a.items .detail_product {
     padding: 14px 16px;
   }
   .banner {
-    padding-top: 137px;
+    padding-top: 115px;
+    margin-bottom: 10px;
   }
   .banner .wrp {
     padding: unset;
     flex-direction: column;
+    border: unset;
   }
   .wrp .product_list .product {
     border-top: 1px solid #DEE2E7;
