@@ -456,7 +456,7 @@ img.like {
 }
 a.items .detail_product {
   display: flex;
-  flex-direction: column;
+ 
   gap: 4px;
   position: relative;
   flex-wrap: wrap;

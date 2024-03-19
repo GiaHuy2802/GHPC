@@ -294,7 +294,7 @@ cursor: pointer;
     width: 100%;
   }
   .mobi_filter a{
-    justify-content: space-between;
+    justify-content: center;
     width: 135px;
     padding: 7px;
     display: flex;
@@ -307,6 +307,16 @@ cursor: pointer;
 @media(max-width:431px){
   .hot_product .hot_selling a.items{
     width:100%;
+  }
+  .head_product .button_head{
+    height: 100%;
+  }
+  .head_product .button_head .view{
+    height: 100%;
+ 
+  }
+  .head_product .button_head a{
+    padding: 5px;
   }
   .top{
     display: flex;
@@ -322,7 +332,7 @@ cursor: pointer;
     display: none !important;
   }
 .hidden_icon{
-  padding-left: 123px;
+  padding-left: 160px;
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -334,7 +344,9 @@ header form input{
   display: flex;
 }
 .hot_product .wrp{
-  padding-top: 140px;
+  padding-top: 128px;
+  padding-left:0 ;
+  padding-right: 0;
 }
   .breadcrumbs {
    display: none;
@@ -342,6 +354,9 @@ header form input{
   .product_right .head_product{
     padding: 10px 11px;
     gap: 4px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #DEE2E7;
 }
 .tag_item a{
   flex: 0 0 27vw;
@@ -361,5 +376,17 @@ a.back_arrow{
   }
   .tag_item{
     overflow-x: auto;
+    padding: 0 10px;
+  }
+  .wrp .hot_selling{
+    padding: 0 10px;
+  }
+  .product_right{
+    gap: 10px;
+  }
+}
+@media(max-width:391px){
+  .hot_product .wrp{
+    padding-top: 145px;
   }
 }
