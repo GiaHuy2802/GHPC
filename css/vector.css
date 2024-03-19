@@ -27,11 +27,8 @@ mark.detail{
     color: #0D6EFD;
 }
 del.old_price{
-    color: #8B96A5;
+    color: #909499;
     width: 73%;
-}
-.detail_product mark.price{
-    font-size: 20px;
 }
 .hot_product .hot_selling a.items{
     width: 100%;
