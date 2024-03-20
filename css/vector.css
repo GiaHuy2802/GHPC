@@ -9,12 +9,16 @@ a.items .detail_product{
     flex-direction: unset;
     align-items: center;
 }
+a.items .detail_product img{
+    padding: 0 ;
+}
 .detail_product p.name{
     width: 100%;
     color: #1c1c1c;
     font-weight: 500;
     line-height: 22px;
 }
+
 img.like{
     top: 5%;
     right: 2%;
@@ -57,7 +61,7 @@ del.old_price{
     }
     p.row{display: none;}
     .hot_selling a.items img
-    {
+    {   padding: 8px;
         width: 100px;
     }
     .hot_selling a.items img.like{
@@ -77,5 +81,9 @@ del.old_price{
     del.old_price{
         display: none;
     }
+    .detail_product span.dot:nth-of-type(2) {
+        display: none;
+      }
+      
   
 }

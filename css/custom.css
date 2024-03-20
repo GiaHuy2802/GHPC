@@ -19,7 +19,7 @@ header .wrp a.cart {
   flex-direction: column;
   align-items: center;
   gap: 7px;
-  color: #606060;
+  color: #8B96A5;
   font-weight: 400;
   font-size: 12px;
 }
@@ -124,6 +124,13 @@ footer .col_list {
   color: #1C1C1C;
   font-size: 16px;
 
+}
+.dot {
+  height: 6px;
+  width: 6px;
+  background-color: #dbdbdb;
+  border-radius: 50%;
+  display: inline-block;
 }
 .col_list .col a{
   color: #8B96A5;

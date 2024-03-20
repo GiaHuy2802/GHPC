@@ -1,5 +1,5 @@
 .banner {
-  margin-bottom: var(--block-margin);
+  margin-bottom:30px;
   padding-top: 170px;
 }
 .banner .wrp {
@@ -56,6 +56,11 @@ span.wellcome p {
   width: 100%;
   margin: unset;
   font-size: 16px;
+}
+.banner .wrp .menu_list a:hover{
+  background: #e3f0ff;
+  border-radius: 8px;
+  color: #1c1c1c !important;
 }
 a.banner_side {
   display: flex;
@@ -360,7 +365,7 @@ form.find button {
   cursor: pointer;
 }
 .hot_product {
-  margin-bottom: var(--block-margin);
+  margin-bottom: 30px;
 }
 
 .our_service {
@@ -439,18 +444,16 @@ form.find button {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  padding: 9px 10px;
+
   border: 1px solid #e0e0e0;
   background: #ffffff;
   border-radius: 8px;
 }
-img.like {
-  position: absolute;
-  right: 0;
-  border: 1px solid #dee2e7;
-  padding: 8px;
-  border-radius: 8px;
+.hot_selling a.items img{
+  padding: 9px 10px;
+  padding-bottom: 0;
 }
+
 .hot_product .wrp {
   display: flex;
   flex-direction: column;
@@ -461,13 +464,18 @@ img.like {
   font-weight: 600;
   color: #1C1C1C;
 }
+.detail_product p.name{
+  width: 100%;
+}
 a.items .detail_product {
   display: flex;
- 
+border: unset;
+align-items: unset;
   gap: 4px;
   position: relative;
   flex-wrap: wrap;
-  padding: 0 6px;
+  padding: 9px 16px;
+  padding-top: 0;
 }
 .detail_product mark.price {
   background: unset;

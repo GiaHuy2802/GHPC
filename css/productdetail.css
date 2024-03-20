@@ -210,13 +210,7 @@ a.save {
 a.items .detail_product {
   flex-direction: column-reverse;
 }
-.dot {
-  height: 6px;
-  width: 6px;
-  background-color: #dbdbdb;
-  border-radius: 50%;
-  display: inline-block;
-}
+
 a.fancybox img {
   height: 380px;
 }
