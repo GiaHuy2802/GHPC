@@ -650,7 +650,7 @@ align-items: unset;
     width: calc((100% - 18px) / 2);
   }
   .hot_product .hot_selling a.items {
-    width: calc((100% - 20px) / 2);
+    width: calc((100% - 8px) / 2);
   }
   header form input {
     background: unset;

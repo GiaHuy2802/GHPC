@@ -41,6 +41,9 @@ del.old_price{
     flex-direction: row;
     gap: 8px;
 }
+.detail_product mark.price{
+    font-size: 20px;
+}
 @media(max-width:433px){
     .hot_product .hot_selling a.items{
        flex-direction: unset;

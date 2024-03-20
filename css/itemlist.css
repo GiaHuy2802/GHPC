@@ -265,7 +265,7 @@ del.old_price{
 a.items .detail_product{
   border-top: 1px solid #EFF2F4
   ;
-  align-items: start;
+  align-items: baseline;
   padding: 17px 20px;
 }
 a.items .detail_product p.order{
@@ -360,6 +360,9 @@ cursor: pointer;
   a.items .detail_product{
     align-items: center;
   }
+  .hot_product.maylike a.items .detail_product{
+    border: 0;
+  }
   .head_product .button_head{
     height: 100%;
   }
@@ -435,6 +438,10 @@ a.back_arrow{
   }
   .wrp .hot_selling{
     padding: 0 10px;
+    gap: 8px;
+  }
+  .page_num{
+    display: none;
   }
   .product_right{
     gap: 10px;

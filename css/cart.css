@@ -16,10 +16,7 @@ header a.mess,
 a.order,
 a.profile,
 a.cart {
-  display: flex;
-  flex-direction: column;
-  height: 41px;
-  align-items: center;
+  
   justify-content: space-between;
 }
 .cart {
@@ -281,7 +278,7 @@ a.later {
   flex-direction: row;
   gap: 14px;
   align-items: center;
-  padding: 14px 10px;
+  padding: 11px 14px;
   background: linear-gradient(180deg, #127fff 0%, #0067ff 100%);
   color: #ffffff !important;
   border-radius: 8px;
