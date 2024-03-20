@@ -39,6 +39,7 @@ del.old_price{
 .hot_product .hot_selling a.items{
     width: 100%;
     flex-direction: row;
+    gap: 8px;
 }
 @media(max-width:433px){
     .hot_product .hot_selling a.items{
@@ -61,7 +62,7 @@ del.old_price{
     }
     p.row{display: none;}
     .hot_selling a.items img
-    {   padding: 8px;
+    {  
         width: 100px;
     }
     .hot_selling a.items img.like{
@@ -71,6 +72,10 @@ del.old_price{
         font-size: 16px;
         width: 100%;
         color: #333333 !important;
+        font-weight: 600;
+    }
+    .hot_product.maylike mark.price{
+        font-weight: 500;
     }
     mark.detail{
         display: none;
@@ -84,6 +89,8 @@ del.old_price{
     .detail_product span.dot:nth-of-type(2) {
         display: none;
       }
-      
+      a.items .detail_product{
+        padding: 10px;
+      }
   
 }

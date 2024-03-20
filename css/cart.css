@@ -35,6 +35,7 @@ a.cart {
   width: 100%;
   font-weight: 600;
   font-size: 24px;
+  color: #1C1C1C;
 }
 .cart_list {
   width: 880px;
@@ -62,8 +63,9 @@ a.cart {
 }
 .cart_item .name_row h3 {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   white-space: nowrap;
+  color: #1C1C1C;
 }
 .cart_item span.total {
   display: flex;
@@ -92,6 +94,7 @@ span.total select {
   border: 1px solid #dcdcdc;
   border-radius: 8px;
   align-items: center;
+  padding: 4px;
 }
 .cart_item .name_row button {
   background: unset;

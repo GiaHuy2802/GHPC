@@ -187,6 +187,9 @@ border: 2px solid #fff;
   flex-wrap: wrap;
   gap: 4px;
 }
+.head_product .head_num strong{
+  color: #1C1C1C;
+}
 .head_product .button_head{
   display: flex;
   flex-direction: row;
@@ -353,6 +356,9 @@ cursor: pointer;
 @media(max-width:431px){
   .hot_product .hot_selling a.items{
     width:100%;
+  }
+  a.items .detail_product{
+    align-items: center;
   }
   .head_product .button_head{
     height: 100%;

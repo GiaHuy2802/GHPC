@@ -298,7 +298,7 @@ margin-left: 8px;
   color: #1c1c1c !important;
 }
 .hot_product .wrp{
-  padding: 20px;
+  padding: 20px 26px 30px 20px;
   background: #ffffff;
   border: 1px solid #dee2e7;
   border-radius: 8px;
@@ -325,12 +325,16 @@ span.stock {
   border-radius: 8px;
   padding: 5px;
 }
+.right_desc a.items .detail_product{
+  padding: 0;
+} 
 p.desc_row {
   line-height: 24px;
   padding-bottom: 13px;
 }
 .right_desc .detail_product p.name {
   color: #1c1c1c !important;
+  width: 100%;
 }
 .detail_product mark.price{
   color:#8B96A5 !important;
@@ -338,6 +342,7 @@ p.desc_row {
 }
 .detail_product p.name{
   color: #505050;
+  width: 100% !important;
 }
 .owl-carousel .owl-item img{
   padding: 4px;
