@@ -44,6 +44,11 @@ del.old_price{
 .detail_product mark.price{
     font-size: 20px;
 }
+@media(max-width:1199px){
+    del.old_price{
+        width: 100%;
+    }
+}
 @media(max-width:433px){
     .hot_product .hot_selling a.items{
        flex-direction: unset;
@@ -63,7 +68,7 @@ del.old_price{
     .hot_product.maylike .hot_selling a.items{
         flex-direction: column;
     }
-    p.row{display: none;}
+    p.row{display: none !important;}
     .hot_selling a.items img
     {  
         width: 100px;
