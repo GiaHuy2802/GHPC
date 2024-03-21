@@ -9,6 +9,9 @@
     responsive: {
       400: {
         autoplay:true,
+      },
+      0: {
+        autoplay:true,
       }
     }
   });
