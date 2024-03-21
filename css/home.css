@@ -179,6 +179,10 @@ span.flag p {
 .hot_deal a.product_deal strong {
   font-size: 16px;
   font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .hot_deal a.product_deal :nth-child(5) {
   border: unset;
@@ -440,6 +444,7 @@ form.find button {
   border-radius: 8px;
 }
 .subscribe button {
+  width: 110px;
   padding: 10px 16px;
   border: unset;
   border-radius: 8px;
