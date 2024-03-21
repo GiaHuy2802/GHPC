@@ -423,7 +423,9 @@ header form input{
     gap: 4px;
     border: none;
     border-radius: 0;
-    border-bottom: 1px solid #DEE2E7;
+    border: 1px solid #DEE2E7;
+    border-left: 0;
+    border-right: 0;
 }
 .tag_item a{
   flex: 0 0 27vw;
@@ -474,7 +476,7 @@ a.back_arrow{
 }
 @media(max-width:391px){
   .hot_product .wrp{
-    padding-top: 145px;
+    padding-top: 130px;
   }
   .hidden_icon{
     padding-left: 80px;
