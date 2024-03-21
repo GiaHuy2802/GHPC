@@ -211,7 +211,7 @@ footer .copy_right {
     width: 100%;
   }
   .menu .tags a.menu_logo {
-    display: none;
+    display: none !important;
   }
   footer .copy_right {
     width: 100%;
@@ -296,6 +296,19 @@ footer .copy_right {
   }
   .head_nav img {
     width: 44px;
+  }
+}
+@media(max-width:769px){
+  .icon_head{
+    display: none;
+  }
+  header .wrp{
+    justify-content: unset;
+    gap: 16px;
+
+  }
+  header form{
+    width: 60%;
   }
 }
 @media (max-width: 431px) {
