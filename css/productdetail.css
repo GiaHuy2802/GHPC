@@ -492,6 +492,7 @@ a#read-more{
   .right_desc .wrp{
     background: unset;
     border: unset;
+    gap:20px ;
   }
   .col_mid .rating{
     gap: 4px;
@@ -530,9 +531,11 @@ a#read-more{
     width: 100%;
     padding: 15px 16px 20px 16px;
     background: #ffffff;
+    border-bottom: 1px solid #dcdcdc;
   }
   .col_right .col_head{
     background: #ffffff;
+    padding: 10px 10px 14px;
   }
   div.price strong.price2, strong.price3{
     display: none;
@@ -635,6 +638,7 @@ a#read-more{
   .col_right .flag{
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 0;
   }
  
   .col_right{
