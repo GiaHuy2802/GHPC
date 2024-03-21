@@ -161,11 +161,11 @@ footer .logo_media img {
   width: unset !important;
 }
 .copy_right {
-  width: 1920px;
+
   display: flex;
 }
 footer .copy_right {
-  width: 1920px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;

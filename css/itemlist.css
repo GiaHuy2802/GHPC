@@ -274,6 +274,12 @@ a.items .detail_product p.order{
 a.items .detail_product img{
   padding: 0;
 }
+a.items .detail_product p.row{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 img.like {
   position: absolute;
   right: 5%;
