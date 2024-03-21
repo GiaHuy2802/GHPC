@@ -616,6 +616,9 @@ align-items: unset;
     padding: 0 10px;
  
   }
+  .subscribe form label{
+    width: 100%;
+  }
   .countdown .time_over span {
     color: #8b96a5;
     background: #eff2f4;
