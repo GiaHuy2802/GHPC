@@ -174,7 +174,7 @@ span.flag p {
   gap: 10px;
   align-items: center;
   border-left: 1px solid #dee2e7;
-  padding: 8px 20px 17px;
+  padding: 8px 19px 17px 20px;
 }
 .hot_deal a.product_deal strong {
   font-size: 16px;
@@ -543,9 +543,6 @@ align-items: unset;
   }
   .our_service {
     margin-bottom: 40px;
-  }
-  .hot_deal .wrp .deal_over{
-    padding: 12px 0;
   }
 }
 @media (max-width: 768px) {
