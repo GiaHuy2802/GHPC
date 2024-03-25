@@ -4,15 +4,14 @@
     border-radius: 10px;
    width: 1180px;
    margin: 0 auto;
-    margin-bottom: 20px;
-    padding-top: 165px;
     padding-left: 0;
+    padding: 20px 0;
   }
   .breadcrumbs li {
     display: inline;
   }
   .breadcrumbs li + li::before {
-    content: "/\00a0";
+    content: "\003E";
     padding: 6px;
     color: var(--color-text);
   }

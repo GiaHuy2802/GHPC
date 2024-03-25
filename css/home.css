@@ -1,6 +1,5 @@
 .banner {
   margin-bottom:30px;
-  padding-top: 170px;
 }
 .banner .wrp {
   width: 1180px;
@@ -166,6 +165,9 @@ span.flag p {
   width: calc(100% - 281px);
   display: flex;
   flex-wrap: wrap;
+}
+img.home_banner{
+  display: flex;
 }
 .hot_deal a.product_deal {
   width: 20%;
@@ -597,7 +599,7 @@ align-items: unset;
 }
 @media (max-width: 431px) {
   .find .wrp {
-  display: none;
+ padding: 0;
   }
   .hot_product .wrp{
     padding-top: 0;
@@ -681,7 +683,6 @@ align-items: unset;
     padding: 14px 16px;
   }
   .banner {
-    padding-top: 115px;
     margin-bottom: 10px;
   }
   .banner .wrp {
@@ -701,7 +702,7 @@ align-items: unset;
     overflow-x: auto;
   }
   .hot_deal a.product_deal {
-    flex: 0 0 50vw;
+    flex: 0 0 40vw;
   }
   .wrp .product_list .product a {
     flex: 0 0 40vw;
