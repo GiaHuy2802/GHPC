@@ -517,6 +517,7 @@ align-items: unset;
   }
   .banner{
     margin-bottom: 0;
+    margin-top: 0;
   }
   .wrp .banner_slide {
     width: calc(100% - 260px);
