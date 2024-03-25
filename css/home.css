@@ -1,5 +1,6 @@
 .banner {
   margin-bottom:30px;
+  margin-top: 20px;
 }
 .banner .wrp {
   width: 1180px;
@@ -509,9 +510,13 @@ align-items: unset;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
 @media (max-width: 1024px) {
   .right_col {
     display: none;
+  }
+  .banner{
+    margin-bottom: 0;
   }
   .wrp .banner_slide {
     width: calc(100% - 260px);
@@ -521,6 +526,7 @@ align-items: unset;
   }
   .banner .wrp {
     width: 100%;
+    border: unset;
   }
   .hot_product .hot_selling a.items {
     width: calc((100% - 40px) / 3);
@@ -689,6 +695,7 @@ align-items: unset;
     padding: unset;
     flex-direction: column;
     border: unset;
+    gap: 17px;
   }
   .wrp .product_list .product {
     border-top: 1px solid #DEE2E7;
@@ -727,7 +734,6 @@ align-items: unset;
     white-space: nowrap;
     flex-direction: unset;
     padding: 0 16px;
-    padding-top: 16px;
   }
   .banner .wrp .menu_list h3 {
     display: none;

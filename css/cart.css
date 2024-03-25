@@ -32,6 +32,7 @@ a.cart {
   font-weight: 600;
   font-size: 24px;
   color: #1C1C1C;
+  margin-top: 20px;
 }
 .cart_list {
   width: 880px;

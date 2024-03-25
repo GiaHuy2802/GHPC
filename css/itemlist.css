@@ -319,6 +319,15 @@ letter-spacing: 0px;
 text-align: left;
 cursor: pointer;
 }
+span.likes mark{
+background-color: unset;
+color: #FF9017;
+}
+span.likes{
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
 @media(max-width:1199px){
   a.items .detail_product{
     flex-direction: column;
@@ -404,6 +413,9 @@ cursor: pointer;
   flex-direction: row;
   gap: 20px;
 }
+.dot.nd{
+  display: none;
+}
 header form input{
   padding-left: 6px;
 }
@@ -411,7 +423,6 @@ header form input{
   display: flex;
 }
 .hot_product .wrp{
-  padding-top: 128px;
   padding-left:0 ;
   padding-right: 0;
 }
@@ -475,9 +486,6 @@ a.back_arrow{
   }
 }
 @media(max-width:391px){
-  .hot_product .wrp{
-    padding-top: 130px;
-  }
   .hidden_icon{
     padding-left: 80px;
   }

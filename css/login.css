@@ -18,7 +18,7 @@ body {
   height: 100vh;
   margin: 0;
 }
- 
+
 .wrp {
   width: 680px;
 
@@ -92,3 +92,13 @@ a:-webkit-any-link {
     color:#111111 !important;
 }
 
+@media(max-width:1199px){
+  .wrp{
+    width: 100%;
+    padding: 16px;
+  }
+  .login{
+  display: flex;
+  padding: 0 16px;
+  }
+}

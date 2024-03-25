@@ -12,7 +12,7 @@
   }
   .breadcrumbs li + li::before {
     content: "\003E";
-    padding: 6px;
+    padding: 0 6px;
     color: var(--color-text);
   }
   .breadcrumbs li a {
@@ -30,7 +30,7 @@
     .breadcrumbs{
       width: 100%;
       padding-left: 16px;
-      margin-bottom: 20px;
+   
     }
   }
 @media(max-width:431px){

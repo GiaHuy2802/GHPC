@@ -23,7 +23,7 @@
     dots: false,
     nav: false,
     stagePadding: 50,
-    autoplay:true,
+    autoplay:false,
     margin:10,
     loop:true,
     responsive: {

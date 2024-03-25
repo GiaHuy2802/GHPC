@@ -185,6 +185,7 @@ footer .copy_right {
   z-index: 10;
   left: 50%;
   top: 0;
+
 }
 .mobile_nav {
   display: none;
@@ -322,6 +323,9 @@ footer .copy_right {
     background: #FFFFFF;
     border-bottom: 1px solid #E0E0E0;
   }
+  .top{
+    margin-bottom: 0;
+  }
   .back_head strong {
     font-size: 18px;
   }
@@ -367,7 +371,7 @@ footer .copy_right {
     justify-content: unset;
     flex-wrap: wrap;
     gap: 12px;
-  
+    padding: 16px 10px;
   }
   header form {
     width: 100%;
