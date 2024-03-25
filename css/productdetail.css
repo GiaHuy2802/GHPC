@@ -453,6 +453,9 @@ a#read-more{
     font-weight: 500;
     font-size: 16px;
   }
+  .col_mid .rating p.rate{
+    display: none;
+  }
   table{
     margin-bottom: 10px;
   }
@@ -511,7 +514,7 @@ a#read-more{
     gap:20px ;
   }
   .col_mid .rating{
-    gap: 4px;
+    gap: 2px;
     order: 1;
   }
   .col_mid h1{
@@ -542,7 +545,7 @@ a#read-more{
   }
   .col_mid{
     width: 100%;
-    padding: 15px 16px 20px 16px;
+    padding: 15px 14px;
     background: #ffffff;
     border-bottom: 1px solid #dcdcdc;
   }
